@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
     }
 })
 
-// Updating an existting Note
+// Updating an existing Note
 router.put('/:id', async (req, res) => {
     try {
         const updatedProduct = await NotesModel.findByIdAndUpdate(req.params.id, {
